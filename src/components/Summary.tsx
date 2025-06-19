@@ -35,7 +35,7 @@ const Summary: React.FC<SummaryProps> = ({ userAnswers, recommendations, onResta
       maximumFractionDigits: 0,
     }).format(amount);
   };
-
+console.log(recommendations)
   return (
     <div className="space-y-8">
       {/* Summary Header */}
@@ -183,8 +183,8 @@ const CreditCardComponent: React.FC<{
       </div>
 
       {/* Card Visual */}
-      <div className="w-full h-32 bg-gradient-to-r from-gray-800 to-gray-600 rounded-lg mb-4 flex items-center justify-center">
-        <CreditCard className="h-12 w-12 text-white" />
+      <div className="overflow-hidden h-40 bg-white rounded-xl mb-4 flex items-center justify-center">
+        <img src = {card.image_url} className = "object-cover h-full w-full"/>
       </div>
     </div>
 

@@ -33,16 +33,11 @@ const Index = () => {
                 <CreditCard className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">SmartCard AI</h1>
+                <h1 className="text-2xl font-bold text-gray-900">CREDCARD AI</h1>
                 <p className="text-sm text-gray-600">AI-Powered Credit Card Advisor</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              {/* Backend Status Indicator */}
-              <div className="hidden sm:flex items-center space-x-2 px-3 py-1 bg-green-50 rounded-full">
-                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-xs text-green-700 font-medium">Python Backend Ready</span>
-              </div>
               {showSummary && (
                 <button
                   onClick={handleRestart}
@@ -63,10 +58,6 @@ const Index = () => {
           <>
             {/* Hero Section */}
             <div className="text-center mb-12">
-              <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-100 to-indigo-100 rounded-full text-blue-700 text-sm font-medium mb-6">
-                <Sparkles className="h-4 w-4 mr-2" />
-                Powered by OpenAI & Python FastAPI
-              </div>
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
                 Find Your Perfect Credit Card
               </h2>

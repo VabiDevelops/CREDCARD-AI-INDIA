@@ -2,442 +2,416 @@
 export const creditCardsData = [
   {
     id: "hdfc-regalia",
-    name: "HDFC Bank Regalia Credit Card",
+    name: "HDFC Regalia Credit Card",
     issuer: "HDFC Bank",
-    image_url: "/api/placeholder/300/180",
+    image_url: "https://www.hdfcbank.com/content/api/contentstream-id/723fb80a-2dde-42a3-9793-7ae1be57c87f/f7da2911-8309-4463-a6fe-b26521c94165/Personal/Pay/Cards/Credit%20Card/Credit%20Card%20Landing%20Page/Credit%20Cards/Super%20Premium/Regalia/regalia_banner1.png",
     joining_fee: 2500,
     annual_fee: 2500,
-    reward_type: "cashback",
-    reward_rate: 1.3,
+    reward_type: "points",
+    reward_rate: "4 points per \u20b9150",
     eligibility_criteria: {
-      min_income: 60000,
+      min_income: 50000,
       min_credit_score: 750
     },
     perks: [
-      "4 reward points per ₹150 spent on dining, travel & entertainment",
-      "2 reward points per ₹150 spent on all other categories",
-      "Complimentary airport lounge access",
-      "Low foreign currency markup of 2%",
-      "Annual fee waiver on spending ₹3 lakh"
+      "Lounge Access",
+      "Dining Discounts",
+      "Travel Insurance"
     ],
-    apply_link: "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia"
-  },
-  {
-    id: "sbi-cashback",
-    name: "SBI Cashback Credit Card",
-    issuer: "State Bank of India",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 999,
-    annual_fee: 999,
-    reward_type: "cashback",
-    reward_rate: 5.0,
-    eligibility_criteria: {
-      min_income: 25000,
-      min_credit_score: 700
-    },
-    perks: [
-      "5% cashback on online spends",
-      "1% cashback on offline spends",
-      "No cashback capping",
-      "Annual fee waiver on spending ₹2 lakh",
-      "Fuel surcharge waiver"
-    ],
-    apply_link: "https://www.sbi.co.in/web/personal-banking/cards/credit-cards/cashback-credit-card"
-  },
-  {
-    id: "axis-ace",
-    name: "Axis Bank ACE Credit Card",
-    issuer: "Axis Bank",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 499,
-    annual_fee: 499,
-    reward_type: "cashback",
-    reward_rate: 1.5,
-    eligibility_criteria: {
-      min_income: 25000,
-      min_credit_score: 650
-    },
-    perks: [
-      "5% cashback on Bill Payments & Mobile Recharges",
-      "4% cashback on Google Pay, Paytm and other UPI",
-      "2% cashback on Swiggy, Zomato & other food delivery apps",
-      "1.5% cashback on all other spends",
-      "No annual fee for lifetime"
-    ],
-    apply_link: "https://www.axisbank.com/retail/cards/credit-card/ace-credit-card"
-  },
-  {
-    id: "icici-amazon-pay",
-    name: "Amazon Pay ICICI Credit Card",
-    issuer: "ICICI Bank",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 0,
-    annual_fee: 0,
-    reward_type: "cashback",
-    reward_rate: 2.0,
-    eligibility_criteria: {
-      min_income: 25000,
-      min_credit_score: 650
-    },
-    perks: [
-      "5% back on Amazon.in for Prime members",
-      "3% back on Amazon.in for non-Prime members",
-      "2% back on Amazon Pay partner merchants",
-      "1% back on other purchases",
-      "No joining fee and no annual fee"
-    ],
-    apply_link: "https://www.icicibank.com/personal-banking/cards/credit-card/amazon-pay-credit-card"
+    apply_link: "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card"
   },
   {
     id: "hdfc-millennia",
-    name: "HDFC Millennia Credit Card",
+    name: "HDFC Millennia",
     issuer: "HDFC Bank",
-    image_url: "/api/placeholder/300/180",
+    image_url: "https://images.app.goo.gl/sU74bjBoczdpLKrg6",
     joining_fee: 1000,
     annual_fee: 1000,
     reward_type: "cashback",
-    reward_rate: 2.5,
+    reward_rate: "5% cashback on Amazon, Flipkart",
     eligibility_criteria: {
-      min_income: 25000,
-      min_credit_score: 700
-    },
-    perks: [
-      "5% cashback on online spends up to ₹1000/month",
-      "2.5% cashback on all other spends",
-      "1% cashback on offline spends",
-      "Annual fee waiver on spending ₹1 lakh",
-      "Low foreign currency markup of 2%"
-    ],
-    apply_link: "https://www.hdfcbank.com/personal/pay/cards/credit-cards/millennia-credit-card"
-  },
-  {
-    id: "amex-gold",
-    name: "American Express Gold Card",
-    issuer: "American Express",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 4500,
-    annual_fee: 4500,
-    reward_type: "travel_points",
-    reward_rate: 1.8,
-    eligibility_criteria: {
-      min_income: 60000,
+      min_income: 35000,
       min_credit_score: 750
     },
     perks: [
-      "4X rewards on dining, 3X on travel",
-      "18,000 bonus points on joining",
-      "Taj Epicure Plus membership",
-      "Airport lounge access",
-      "Travel insurance coverage"
+      "Cashback",
+      "Fuel Surcharge Waiver"
     ],
-    apply_link: "https://www.americanexpress.com/in/credit-cards/gold-card"
+    apply_link: "https://www.hdfcbank.com/personal/pay/cards/millennia-cards"
   },
   {
-    id: "citi-rewards",
-    name: "Citi Rewards Credit Card",
-    issuer: "Citibank",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 1000,
-    annual_fee: 1000,
-    reward_type: "travel_points",
-    reward_rate: 1.6,
-    eligibility_criteria: {
-      min_income: 30000,
-      min_credit_score: 700
-    },
-    perks: [
-      "10X reward points on dining and entertainment",
-      "2X reward points on grocery and utility bills",
-      "1X reward point on all other spends",
-      "No preset spending limit",
-      "Annual fee reversal on spending ₹30,000"
-    ],
-    apply_link: "https://www.online.citibank.co.in/products-services/credit-cards/citi-rewards-credit-card"
-  },
-  {
-    id: "kotak-white",
-    name: "Kotak White Credit Card",
-    issuer: "Kotak Mahindra Bank",
-    image_url: "/api/placeholder/300/180",
+    id: "sbi-cashback",
+    name: "SBI Cashback Card",
+    issuer: "SBI",
+    image_url: "https://images.app.goo.gl/b3YzzPqXAe8V8FHJA",
     joining_fee: 999,
     annual_fee: 999,
     reward_type: "cashback",
-    reward_rate: 1.5,
+    reward_rate: "5% cashback on online spend",
     eligibility_criteria: {
-      min_income: 25000,
-      min_credit_score: 650
-    },
-    perks: [
-      "5% cashback on Bill Payments",
-      "4% cashback on Zomato and Swiggy",
-      "2% cashback on online spends",
-      "1% cashback on offline spends",
-      "Annual fee waiver on spending ₹30,000"
-    ],
-    apply_link: "https://www.kotak.com/en/personal-banking/cards/credit-cards/kotak-white-credit-card.html"
-  },
-  {
-    id: "yes-first-exclusive",
-    name: "YES First Exclusive Credit Card",
-    issuer: "YES Bank",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 2499,
-    annual_fee: 2499,
-    reward_type: "travel_points",
-    reward_rate: 1.8,
-    eligibility_criteria: {
-      min_income: 50000,
-      min_credit_score: 720
-    },
-    perks: [
-      "6 reward points per ₹200 on dining and travel",
-      "3 reward points per ₹200 on all other spends",
-      "Complimentary airport lounge access",
-      "Annual fee waiver on spending ₹2 lakh",
-      "Movie ticket offers"
-    ],
-    apply_link: "https://www.yesbank.in/personal-banking/yes-individual/cards/credit-cards/yes-first-exclusive-credit-card"
-  },
-  {
-    id: "indusind-legend",
-    name: "IndusInd Bank Legend Credit Card",
-    issuer: "IndusInd Bank",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 3000,
-    annual_fee: 3000,
-    reward_type: "travel_points",
-    reward_rate: 2.0,
-    eligibility_criteria: {
-      min_income: 75000,
+      min_income: 30000,
       min_credit_score: 750
     },
     perks: [
-      "5 reward points per ₹150 on travel and dining",
-      "2 reward points per ₹150 on all other spends",
-      "Airport lounge access",
-      "Golf privileges",
-      "Concierge services"
+      "Cashback",
+      "Amazon Voucher"
     ],
-    apply_link: "https://www.indusind.com/in/en/personal/cards/credit-card/legend.html"
+    apply_link: "https://www.sbicard.com/en/personal/credit-cards/rewards/cashback-sbi-card.page"
   },
   {
-    id: "sbi-prime",
-    name: "SBI Card PRIME",
-    issuer: "SBI Card",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 2999,
-    annual_fee: 2999,
-    reward_type: "travel_points",
-    reward_rate: 1.7,
-    eligibility_criteria: {
-      min_income: 50000,
-      min_credit_score: 720
-    },
-    perks: [
-      "5X reward points on dining, grocery & departmental stores",
-      "2X reward points on all other spends",
-      "Milestone benefits",
-      "Airport lounge access",
-      "Annual fee waiver on spending ₹1.5 lakh"
-    ],
-    apply_link: "https://www.sbicard.com/en/personal/credit-cards/super-premium/sbi-card-prime.page"
-  },
-  {
-    id: "axis-magnus",
-    name: "Axis Bank Magnus Credit Card",
-    issuer: "Axis Bank",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 12500,
-    annual_fee: 12500,
-    reward_type: "travel_points",
-    reward_rate: 2.4,
-    eligibility_criteria: {
-      min_income: 150000,
-      min_credit_score: 780
-    },
-    perks: [
-      "12 EDGE Miles per ₹200 on travel edge partners",
-      "6 EDGE Miles per ₹200 on other spends",
-      "25,000 bonus miles on achieving annual milestone",
-      "Unlimited airport lounge access",
-      "Golf privileges and concierge services"
-    ],
-    apply_link: "https://www.axisbank.com/retail/cards/credit-card/magnus-credit-card"
-  },
-  {
-    id: "hdfc-infinia",
-    name: "HDFC Bank Infinia Credit Card",
-    issuer: "HDFC Bank",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 12500,
-    annual_fee: 12500,
-    reward_type: "travel_points",
-    reward_rate: 3.3,
-    eligibility_criteria: {
-      min_income: 200000,
-      min_credit_score: 800
-    },
-    perks: [
-      "5 reward points per ₹150 on all spends",
-      "10 reward points per ₹150 on smartbuy",
-      "Unlimited airport lounge access worldwide",
-      "Golf privileges",
-      "Priority Pass membership"
-    ],
-    apply_link: "https://www.hdfcbank.com/personal/pay/cards/credit-cards/infinia-credit-card"
-  },
-  {
-    id: "icici-sapphiro",
-    name: "ICICI Bank Sapphiro Credit Card",
-    issuer: "ICICI Bank",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 3500,
-    annual_fee: 3500,
-    reward_type: "travel_points",
-    reward_rate: 2.0,
-    eligibility_criteria: {
-      min_income: 60000,
-      min_credit_score: 750
-    },
-    perks: [
-      "4 reward points per ₹100 on dining and international spends",
-      "2 reward points per ₹100 on all other spends",
-      "Airport lounge access",
-      "Golf privileges",
-      "Annual fee waiver on spending ₹2 lakh"
-    ],
-    apply_link: "https://www.icicibank.com/personal-banking/cards/credit-card/sapphiro-credit-card"
-  },
-  {
-    id: "standard-chartered-ultimate",
-    name: "Standard Chartered Ultimate Credit Card",
-    issuer: "Standard Chartered Bank",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 5000,
-    annual_fee: 5000,
-    reward_type: "cashback",
-    reward_rate: 3.3,
+    id: "sbi-elite",
+    name: "SBI Elite Card",
+    issuer: "SBI",
+    image_url: "https://images.app.goo.gl/t7asJPJuPxdAyM6q9",
+    joining_fee: 4999,
+    annual_fee: 4999,
+    reward_type: "points",
+    reward_rate: "2 points per \u20b9100",
     eligibility_criteria: {
       min_income: 100000,
       min_credit_score: 750
     },
     perks: [
-      "5% cashback on dining, grocery and departmental stores",
-      "1.5% cashback on all other spends",
-      "Unlimited domestic airport lounge access",
-      "Exclusive dining privileges",
-      "Annual fee waiver on spending ₹2 lakh"
+      "Lounge Access",
+      "Club Vistara Membership",
+      "Movie Tickets"
     ],
-    apply_link: "https://www.sc.com/in/credit-cards/ultimate-credit-card/"
+    apply_link: "https://www.sbicard.com/en/personal/credit-cards/lifestyle/sbi-card-elite.page"
   },
   {
-    id: "amex-platinum-travel",
-    name: "American Express Platinum Travel Credit Card",
+    id: "axis-vistara",
+    name: "Axis Vistara Card",
+    issuer: "Axis Bank",
+    image_url: "https://images.app.goo.gl/USD7bFQ3vhwwjPAV9",
+    joining_fee: 1500,
+    annual_fee: 1500,
+    reward_type: "miles",
+    reward_rate: "3 CV Points per \u20b9200",
+    eligibility_criteria: {
+      min_income: 50000,
+      min_credit_score: 750
+    },
+    perks: [
+      "Free Flight Ticket",
+      "Lounge Access"
+    ],
+    apply_link: "https://www.axisbank.com/retail/cards/credit-card/axis-bank-vistara-credit-card"
+  },
+  {
+    id: "axis-ace",
+    name: "Axis ACE Credit Card",
+    issuer: "Axis Bank",
+    image_url: "https://images.app.goo.gl/okpMgG1zDy8Vg6ZA7",
+    joining_fee: 499,
+    annual_fee: 499,
+    reward_type: "cashback",
+    reward_rate: "5% on Google Pay, 2% elsewhere",
+    eligibility_criteria: {
+      min_income: 25000,
+      min_credit_score: 750
+    },
+    perks: [
+      "Cashback",
+      "Bill Payment Discounts"
+    ],
+    apply_link: "https://www.axisbank.com/retail/cards/credit-card/axis-bank-ace-credit-card"
+  },
+  {
+    id: "icici-amazon-pay",
+    name: "ICICI Amazon Pay",
+    issuer: "ICICI Bank",
+    image_url: "https://images.app.goo.gl/EmqxiFVvETWYWW1DA",
+    joining_fee: 0,
+    annual_fee: 0,
+    reward_type: "amazon pay cashback",
+    reward_rate: "5% for Prime, 3% for non-Prime",
+    eligibility_criteria: {
+      min_income: null,
+      min_credit_score: 750
+    },
+    perks: [
+      "Cashback",
+      "Amazon Prime Offers"
+    ],
+    apply_link: "https://www.icicibank.com/personal-banking/cards/credit-card/amazon-pay-credit-card"
+  },
+  {
+    id: "icici-coral",
+    name: "ICICI Coral Card",
+    issuer: "ICICI Bank",
+    image_url: "https://images.app.goo.gl/Q9aiiDcc6xS5Ewzr8",
+    joining_fee: 500,
+    annual_fee: 500,
+    reward_type: "points",
+    reward_rate: "2 points per \u20b9100",
+    eligibility_criteria: {
+      min_income: 25000,
+      min_credit_score: 750
+    },
+    perks: [
+      "Airport Lounge Access",
+      "Movie Offers"
+    ],
+    apply_link: "https://www.icicibank.com/personal-banking/cards/credit-card/coral-card"
+  },
+  {
+    id: "idfc-first-select",
+    name: "IDFC First Select",
+    issuer: "IDFC First Bank",
+    image_url: "https://images.app.goo.gl/m9psmCHPSjcpSWrq8",
+    joining_fee: 0,
+    annual_fee: 0,
+    reward_type: "points",
+    reward_rate: "6x on online, 3x on offline",
+    eligibility_criteria: {
+      min_income: 30000,
+      min_credit_score: 750
+    },
+    perks: [
+      "Lounge Access",
+      "Roadside Assistance"
+    ],
+    apply_link: "https://www.idfcfirstbank.com/credit-card/select"
+  },
+  {
+    id: "standard-chartered-digismart",
+    name: "Standard Chartered DigiSmart",
+    issuer: "Standard Chartered",
+    image_url: "https://images.app.goo.gl/vCeGweBzHYP3GK7T7",
+    joining_fee: 49,
+    annual_fee: 49,
+    reward_type: "discounts",
+    reward_rate: "10% on Myntra, Grofers, Zomato",
+    eligibility_criteria: {
+      min_income: 25000,
+      min_credit_score: 750
+    },
+    perks: [
+      "E-commerce Discounts"
+    ],
+    apply_link: "https://www.sc.com/in/credit-cards/digismart-card/"
+  },
+  {
+    id: "american-express-smartearn",
+    name: "American Express SmartEarn\u2122 Credit Card",
     issuer: "American Express",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 3500,
-    annual_fee: 3500,
-    reward_type: "travel_points",
-    reward_rate: 2.8,
+    image_url: "https://images.app.goo.gl/LBCFnVExyFUD6NGY7",
+    joining_fee: 495,
+    annual_fee: 495,
+    reward_type: "points",
+    reward_rate: "10X points on Zomato, Ajio, Nykaa, BookMyShow, Uber; 5X on Amazon per \u20b950 spent",
+    eligibility_criteria: {
+      min_income: 40000,
+      min_credit_score: 750
+    },
+    perks: [
+      "Welcome Gift: \u20b9500 cashback on \u20b910,000 spend in 90 days",
+      "Milestone Benefits: Amazon vouchers at \u20b91.2L, \u20b91.8L, \u20b92.4L spends",
+      "EMI at 14% p.a."
+    ],
+    apply_link: "https://www.americanexpress.com/in/credit-cards/smart-earn-credit-card/"
+  },
+  {
+    id: "american-express-membership-rewards",
+    name: "American Express Membership Rewards\u00ae Credit Card",
+    issuer: "American Express",
+    image_url: "https://images.app.goo.gl/tq2UdggXCSMYj3vT8",
+    joining_fee: 1000,
+    annual_fee: 1000,
+    reward_type: "points",
+    reward_rate: "1000 Bonus Points for 4 spends of \u20b91500+/month + 1000 more if spending > \u20b920,000",
+    eligibility_criteria: {
+      min_income: 55000,
+      min_credit_score: 750
+    },
+    perks: [
+      "Welcome Gift: 4,000 Bonus Points",
+      "Bonus rewards for routine monthly usage",
+      "Redeem from Gold Collection",
+      "EMI payment option"
+    ],
+    apply_link: "https://www.americanexpress.com/in/credit-cards/membership-rewards-card/"
+  },
+  {
+    id: "american-express-platinum-reservesm",
+    name: "American Express\u00ae Platinum ReserveSM Credit Card",
+    issuer: "American Express",
+    image_url: "https://images.app.goo.gl/73R4UsmZQhrEP54u5",
+    joining_fee: 10000,
+    annual_fee: 10000,
+    reward_type: "points",
+    reward_rate: "Standard Membership Rewards Points",
+    eligibility_criteria: {
+      min_income: 100000,
+      min_credit_score: 750
+    },
+    perks: [
+      "Welcome Gift: 11,000 Bonus Points",
+      "Complimentary access to domestic lounges in India",
+      "Hotel privileges at Taj, SeleQtions, Preferred Hotels",
+      "Golf course access"
+    ],
+    apply_link: "https://www.americanexpress.com/in/credit-cards/platinum-reserve-credit-card/"
+  },
+  {
+    id: "american-express-platinum-travel",
+    name: "American Express\u00ae Platinum Travel Credit Card",
+    issuer: "American Express",
+    image_url: "https://images.app.goo.gl/ixishVkfEV2ckJ6e9",
+    joining_fee: 5000,
+    annual_fee: 5000,
+    reward_type: "points",
+    reward_rate: "Milestone rewards: 15,000 points at \u20b91.9L; 25,000 + Taj voucher at \u20b94L spend",
     eligibility_criteria: {
       min_income: 60000,
       min_credit_score: 750
     },
     perks: [
-      "5X membership rewards points on overseas spends",
-      "3X points on dining",
-      "40,000 bonus points on joining",
-      "Comprehensive travel insurance",
-      "Airport lounge access"
+      "Welcome Gift: 10,000 Membership Rewards Points",
+      "Taj stay voucher worth \u20b910,000",
+      "8 complimentary lounge visits per year",
+      "Redeem via Amex Travel Online"
     ],
-    apply_link: "https://www.americanexpress.com/in/credit-cards/platinum-travel-credit-card"
-  },
-  {
-    id: "rbl-world-safari",
-    name: "RBL Bank World Safari Credit Card",
-    issuer: "RBL Bank",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 3000,
-    annual_fee: 3000,
-    reward_type: "travel_points",
-    reward_rate: 2.2,
-    eligibility_criteria: {
-      min_income: 50000,
-      min_credit_score: 720
-    },
-    perks: [
-      "6 reward points per ₹100 on travel and dining",
-      "3 reward points per ₹100 on all other spends",
-      "Airport lounge access",
-      "Travel insurance",
-      "Annual fee waiver on spending ₹1.5 lakh"
-    ],
-    apply_link: "https://www.rblbank.com/cards/credit-cards/world-safari-credit-card"
+    apply_link: "https://www.americanexpress.com/in/credit-cards/platinum-travel-credit-card/"
   },
   {
     id: "hsbc-cashback",
     name: "HSBC Cashback Credit Card",
-    issuer: "HSBC Bank",
-    image_url: "/api/placeholder/300/180",
+    issuer: "HSBC",
+    image_url: "https://images.app.goo.gl/p26xH7cuNTCDdPmr8",
     joining_fee: 999,
     annual_fee: 999,
     reward_type: "cashback",
-    reward_rate: 1.5,
+    reward_rate: "1.5% on online spends, 1% on other spends",
     eligibility_criteria: {
-      min_income: 40000,
-      min_credit_score: 700
+      min_income: 25000,
+      min_credit_score: 750
     },
     perks: [
-      "10% cashback on dining for first 6 months",
-      "1.5% unlimited cashback on all spends",
-      "No cashback capping",
-      "Annual fee waiver on spending ₹1 lakh",
-      "Fuel surcharge waiver"
+      "Lifetime free credit card",
+      "Fuel surcharge waiver",
+      "Dining discounts via partner restaurants"
     ],
-    apply_link: "https://www.hsbc.co.in/credit-cards/products/cashback/"
+    apply_link: "https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiStKzewvmNAxWHLYMDHdNoJt4YABABGgJzZg&co=1&gclid=CjwKCAjwpMTCBhA-EiwA_-MsmRXZ8ZQBKoLYw1taxOu0xxFFwhWyHblq-sl71O23dOBxfpznBPiNFBoCmDIQAvD_BwE&ohost=www.google.com&cid=CAESVuD2GnpADHp6_C0QosFvMY-KB2RCiAsjCv_KMbDnA7rNSo7j_XIu98mjJmpeMx0tNUn1Uc2b6Z1Xy8TjquZHJ5dH18710uSMEZK0Bktc0y-i5MAWU7NG&category=acrcp_v1_40&sig=AOD64_2Qsytjs2MsPU8QdZWOaDS3RFe4_g&q&adurl&ved=2ahUKEwi_u6jewvmNAxVnTGwGHfJdJxUQ0Qx6BAgREAQ"
   },
   {
-    id: "bob-eterna",
-    name: "Bank of Baroda Eterna Credit Card",
-    issuer: "Bank of Baroda",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 999,
-    annual_fee: 999,
-    reward_type: "travel_points",
-    reward_rate: 1.8,
+    id: "hsbc-visa-platinum",
+    name: "HSBC Visa Platinum Credit Card",
+    issuer: "HSBC",
+    image_url: "https://images.app.goo.gl/81ChPeKkELJ6XVGT7",
+    joining_fee: 0,
+    annual_fee: 0,
+    reward_type: "points",
+    reward_rate: "2 points per \u20b9150 spent",
     eligibility_criteria: {
       min_income: 30000,
-      min_credit_score: 680
+      min_credit_score: 750
     },
     perks: [
-      "4 reward points per ₹100 on dining and entertainment",
-      "2 reward points per ₹100 on all other spends",
-      "Welcome bonus of 2500 points",
-      "Fuel surcharge waiver",
-      "Annual fee waiver on spending ₹60,000"
+      "Welcome benefits worth \u20b92,250 (vouchers + discounts)",
+      "6 complimentary airport lounge visits per year",
+      "5X rewards on online spends during initial 90 days"
     ],
-    apply_link: "https://www.bankofbaroda.in/personal-banking/digital-products/ways-to-bank/bob-cards/credit-cards/eterna"
+    apply_link: "https://www.hsbc.co.in/credit-cards/products/visa-platinum/"
   },
   {
-    id: "federal-signet",
-    name: "Federal Bank Signet Credit Card",
-    issuer: "Federal Bank",
-    image_url: "/api/placeholder/300/180",
-    joining_fee: 499,
-    annual_fee: 499,
-    reward_type: "cashback",
-    reward_rate: 1.2,
+    id: "hsbc-premier",
+    name: "HSBC Premier Credit Card",
+    issuer: "HSBC",
+    image_url: "https://images.app.goo.gl/2E5aACGcBAM3nTqi9",
+    joining_fee: 0,
+    annual_fee: 0,
+    reward_type: "points",
+    reward_rate: "Up to 3X reward points on overseas & dining spends",
     eligibility_criteria: {
-      min_income: 20000,
-      min_credit_score: 650
+      min_income: 1,
+      min_credit_score: 750
     },
     perks: [
-      "5% cashback on fuel and grocery",
-      "2% cashback on online spends",
-      "1% cashback on all other spends",
-      "Annual fee waiver on spending ₹50,000",
-      "Contactless payment facility"
+      "Unlimited domestic & international lounge access",
+      "Global concierge services",
+      "AirMiles redemption & travel insurance"
     ],
-    apply_link: "https://www.federalbank.co.in/personal/cards/credit-cards/signet"
+    apply_link: "https://www.hsbc.co.in/credit-cards/products/premier/"
+  },
+  {
+    id: "hsbc-smart-value",
+    name: "HSBC Smart Value Credit Card",
+    issuer: "HSBC",
+    image_url: "https://images.app.goo.gl/Hccprfwrff2z5LWo8",
+    joining_fee: 499,
+    annual_fee: 499,
+    reward_type: "points",
+    reward_rate: "3X rewards on dining, telecom, and utility bill spends",
+    eligibility_criteria: {
+      min_income: 20000,
+      min_credit_score: 750
+    },
+    perks: [
+      "Introductory cashback offers on spends",
+      "Fuel surcharge waiver",
+      "Low interest EMI conversion on purchases"
+    ],
+    apply_link: "https://www.hsbc.co.in/credit-cards/products/smart-value/"
+  },
+  {
+    id: "bpcl-sbi-octane",
+    name: "BPCL SBI Card Octane",
+    issuer: "SBI",
+    image_url: "https://images.app.goo.gl/UgaaWd2rnUyRcD957",
+    joining_fee: 1499,
+    annual_fee: 1499,
+    reward_type: "fuel points",
+    reward_rate: "25X reward points on BPCL fuel spends, 10X on groceries & dining",
+    eligibility_criteria: {
+      min_income: 30000,
+      min_credit_score: 750
+    },
+    perks: [
+      "Fuel surcharge waiver at BPCL stations",
+      "\u20b9150 cashback on first fuel spend of \u20b91000",
+      "Complimentary airport lounge access"
+    ],
+    apply_link: "https://www.sbicard.com/en/personal/credit-cards/travel/bpcl-sbi-card-octane.page"
+  },
+  {
+    id: "indianoil-axis-bank",
+    name: "IndianOil Axis Bank Credit Card",
+    issuer: "Axis Bank",
+    image_url: "https://images.app.goo.gl/QkALuySzfhzquseF6",
+    joining_fee: 500,
+    annual_fee: 500,
+    reward_type: "fuel points",
+    reward_rate: "20 EDGE Reward Points per \u20b9100 fuel spend at IOCL",
+    eligibility_criteria: {
+      min_income: 20000,
+      min_credit_score: 750
+    },
+    perks: [
+      "4% value back on fuel spends at IndianOil outlets",
+      "Fuel surcharge waiver",
+      "1% cashback on online shopping"
+    ],
+    apply_link: "https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwin07KNxfmNAxXEo2YCHdS_H2YYABABGgJzbQ&co=1&gclid=CjwKCAjwpMTCBhA-EiwA_-MsmdlGVsETq1rqHv9EQ7IZnDLopS7Y7dryOdIsTadW5mvUTuaHoA9ktBoCT6QQAvD_BwE&ohost=www.google.com&cid=CAESVuD261NF0VDW8p4TLfgnO3FxHV7qnudCe0MF9qeeY3lxd2kdNMsUK5AAEIKRcHdh7gGBGkvjW2ISyOtadtGvpeWCGC0s8BSAMD9f9mYNSiSbJh7Tkknz&category=acrcp_v1_40&sig=AOD64_31ql33fstMD22s6KojjQ20QudHsw&q&adurl&ved=2ahUKEwjGzq6NxfmNAxVlS2cHHUXpEN4Q0Qx6BAgPEAE"
+  },
+  {
+    id: "kotak-essentia-platinum",
+    name: "Kotak Essentia Platinum Credit Card",
+    issuer: "Kotak Mahindra Bank",
+    image_url: "https://images.app.goo.gl/1TgtAYEgjXGSTNBJ7",
+    joining_fee: 749,
+    annual_fee: 749,
+    reward_type: "points",
+    reward_rate: "10 Saving Points per \u20b9100 spent on groceries & department stores",
+    eligibility_criteria: {
+      min_income: 25000,
+      min_credit_score: 750
+    },
+    perks: [
+      "Fuel surcharge waiver",
+      "Milestone benefits on annual spend",
+      "6 free PVR movie tickets yearly"
+    ],
+    apply_link: "https://www.kotak.com/en/personal-banking/cards/credit-cards/essentia-platinum-credit-card.html"
   }
-];
+]

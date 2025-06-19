@@ -2,10 +2,6 @@
 
 A minimal AI-powered frontend application that helps users get **personalized credit card recommendations** by answering a few simple questions. Built using React and OpenAI.
 
-<div align="center">
-  <img src="./assets/demo.gif" alt="Demo GIF" width="700"/>
-</div>
-
 ---
 
 ## 🔗 Live Demo
@@ -17,7 +13,6 @@ A minimal AI-powered frontend application that helps users get **personalized cr
 ## 📽 Demo Video
 
 ▶️ [Watch Demo](https://link-to-your-video.com)  
-*(Upload to Loom, YouTube unlisted, or Google Drive — make sure it's public)*
 
 ---
 

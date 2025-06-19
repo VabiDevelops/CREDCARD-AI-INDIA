@@ -101,3 +101,34 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-from-left {
+  animation: slide-in-left 0.5s ease-out forwards;
+}
+
+.slide-from-right {
+  animation: slide-in-right 0.5s ease-out forwards;
+}
+

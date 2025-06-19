@@ -12,14 +12,22 @@ const Chat: React.FC<ChatProps> = ({ onRecommendationsReady }) => {
   const [input, setInput] = useState('');
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const { messages, sendMessage, isLoading, error } = useChat(onRecommendationsReady);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
+useEffect(() => {
+  scrollToBottom();
+
+  // If last message was from bot, focus input
+  const lastMessage = messages[messages.length - 1];
+  if (lastMessage?.role === 'assistant') {
+    inputRef.current?.focus();
+  }
+}, [messages]);
+
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -93,6 +101,7 @@ const Chat: React.FC<ChatProps> = ({ onRecommendationsReady }) => {
       <div className="border-t px-6 py-4">
         <form onSubmit={handleSubmit} className="flex space-x-3">
           <input
+            ref={inputRef}
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
@@ -121,42 +130,60 @@ const MessageBubble: React.FC<{
   message: ChatMessage;
   onQuickResponse: (response: string) => void;
   isLoading: boolean;
-}> = ({ message, onQuickResponse, isLoading }) => (
-  <div className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-    <div className={`flex items-start space-x-3 max-w-xs sm:max-w-md ${message.role === 'user' ? 'flex-row-reverse space-x-reverse' : ''}`}>
-      <div className={`p-2 rounded-full ${message.role === 'user' ? 'bg-blue-600' : 'bg-gray-100'}`}>
-        {message.role === 'user' ? (
-          <User className="h-4 w-4 text-white" />
-        ) : (
-          <Bot className="h-4 w-4 text-gray-600" />
-        )}
-      </div>
-      <div
-        className={`px-4 py-3 rounded-2xl ${
-          message.role === 'user'
-            ? 'bg-blue-600 text-white'
-            : 'bg-gray-100 text-gray-800'
-        }`}
-      >
-        <p className="text-sm leading-relaxed">{message.content}</p>
-        {message.quick_replies && (
-          <div className="flex flex-wrap gap-2 mt-3">
-            {message.quick_replies.map((reply, idx) => (
-              <button
-                key={idx}
-                onClick={() => onQuickResponse(reply)}
-                className="px-3 py-1 bg-white/20 text-white rounded-full text-xs hover:bg-white/30 transition-colors"
-                disabled={isLoading}
-              >
-                {reply}
-              </button>
-            ))}
-          </div>
-        )}
+}> = ({ message, onQuickResponse, isLoading }) => {
+  const [displayedText, setDisplayedText] = useState('');
+  const isUser = message.role === 'user';
+
+  useEffect(() => {
+    if (!isUser) {
+      let i = 0;
+      const interval = setInterval(() => {
+        setDisplayedText(message.content.slice(0, i + 1));
+        i++;
+        if (i >= message.content.length) clearInterval(interval);
+      }, 15); // typing speed
+      return () => clearInterval(interval);
+    } else {
+      setDisplayedText(message.content); // instant for user
+    }
+  }, [message.content, isUser]);
+
+  return (
+    <div className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>
+      <div className={`flex items-start space-x-3 max-w-xs sm:max-w-md ${isUser ? 'flex-row-reverse space-x-reverse' : ''}`}>
+        <div className={`p-2 rounded-full ${isUser ? 'bg-blue-600' : 'bg-gray-100'}`}>
+          {isUser ? (
+            <User className="h-4 w-4 text-white" />
+          ) : (
+            <Bot className="h-4 w-4 text-gray-600" />
+          )}
+        </div>
+        <div
+          className={`px-4 py-3 rounded-2xl transition-all duration-500 ${
+            isUser ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-800'
+          }`}
+        >
+          <p className="text-sm leading-relaxed whitespace-pre-wrap">{displayedText}</p>
+
+          {message.quick_replies && displayedText === message.content && (
+            <div className="flex flex-wrap gap-2 mt-3">
+              {message.quick_replies.map((reply, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => onQuickResponse(reply)}
+                  className="px-3 py-1 bg-white/20 text-white rounded-full text-xs hover:bg-white/30 transition-colors"
+                  disabled={isLoading}
+                >
+                  {reply}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const TypingIndicator: React.FC = () => (
   <div className="flex justify-start">

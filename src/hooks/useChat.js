@@ -25,6 +25,9 @@ export const useChat = (onRecommendationsReady) => {
         setUserAnswers(response.updatedAnswers);
       }
 
+      // Show typing dots first
+    await new Promise((resolve) => setTimeout(resolve, 800)); // artificial delay
+
       // Add AI response
       const aiMessage = {
         role: 'assistant',

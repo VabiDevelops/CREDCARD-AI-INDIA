@@ -8,7 +8,7 @@ export const creditCardsData = [
     joining_fee: 2500,
     annual_fee: 2500,
     reward_type: "points",
-    reward_rate: "4 points per \u20b9150",
+    reward_rate: 1.5,
     eligibility_criteria: {
       min_income: 50000,
       min_credit_score: 750
@@ -28,7 +28,7 @@ export const creditCardsData = [
     joining_fee: 1000,
     annual_fee: 1000,
     reward_type: "cashback",
-    reward_rate: "5% cashback on Amazon, Flipkart",
+    reward_rate: 2.0,
     eligibility_criteria: {
       min_income: 35000,
       min_credit_score: 750
@@ -47,7 +47,7 @@ export const creditCardsData = [
     joining_fee: 999,
     annual_fee: 999,
     reward_type: "cashback",
-    reward_rate: "5% cashback on online spend",
+    reward_rate: 1.2,
     eligibility_criteria: {
       min_income: 30000,
       min_credit_score: 750
@@ -66,7 +66,7 @@ export const creditCardsData = [
     joining_fee: 4999,
     annual_fee: 4999,
     reward_type: "points",
-    reward_rate: "2 points per \u20b9100",
+    reward_rate: 1.2,
     eligibility_criteria: {
       min_income: 100000,
       min_credit_score: 750
@@ -86,7 +86,7 @@ export const creditCardsData = [
     joining_fee: 1500,
     annual_fee: 1500,
     reward_type: "miles",
-    reward_rate: "3 CV Points per \u20b9200",
+    reward_rate: 1.3,
     eligibility_criteria: {
       min_income: 50000,
       min_credit_score: 750
@@ -105,7 +105,7 @@ export const creditCardsData = [
     joining_fee: 499,
     annual_fee: 499,
     reward_type: "cashback",
-    reward_rate: "5% on Google Pay, 2% elsewhere",
+    reward_rate: 5.0,
     eligibility_criteria: {
       min_income: 25000,
       min_credit_score: 750
@@ -124,7 +124,7 @@ export const creditCardsData = [
     joining_fee: 0,
     annual_fee: 0,
     reward_type: "amazon pay cashback",
-    reward_rate: "5% for Prime, 3% for non-Prime",
+    reward_rate: 5.0,
     eligibility_criteria: {
       min_income: null,
       min_credit_score: 750
@@ -143,7 +143,7 @@ export const creditCardsData = [
     joining_fee: 500,
     annual_fee: 500,
     reward_type: "points",
-    reward_rate: "2 points per \u20b9100",
+    reward_rate: 2.0,
     eligibility_criteria: {
       min_income: 25000,
       min_credit_score: 750
@@ -162,7 +162,7 @@ export const creditCardsData = [
     joining_fee: 0,
     annual_fee: 0,
     reward_type: "points",
-    reward_rate: "6x on online, 3x on offline",
+    reward_rate: 6.0,
     eligibility_criteria: {
       min_income: 30000,
       min_credit_score: 750
@@ -181,7 +181,7 @@ export const creditCardsData = [
     joining_fee: 49,
     annual_fee: 49,
     reward_type: "discounts",
-    reward_rate: "10% on Myntra, Grofers, Zomato",
+    reward_rate: 1.5,
     eligibility_criteria: {
       min_income: 25000,
       min_credit_score: 750
@@ -199,7 +199,7 @@ export const creditCardsData = [
     joining_fee: 495,
     annual_fee: 495,
     reward_type: "points",
-    reward_rate: "10X points on Zomato, Ajio, Nykaa, BookMyShow, Uber; 5X on Amazon per \u20b950 spent",
+    reward_rate: 5.0,
     eligibility_criteria: {
       min_income: 40000,
       min_credit_score: 750
@@ -219,7 +219,7 @@ export const creditCardsData = [
     joining_fee: 1000,
     annual_fee: 1000,
     reward_type: "points",
-    reward_rate: "1000 Bonus Points for 4 spends of \u20b91500+/month + 1000 more if spending > \u20b920,000",
+    reward_rate: 3.0,
     eligibility_criteria: {
       min_income: 55000,
       min_credit_score: 750
@@ -240,7 +240,7 @@ export const creditCardsData = [
     joining_fee: 10000,
     annual_fee: 10000,
     reward_type: "points",
-    reward_rate: "Standard Membership Rewards Points",
+    reward_rate: 1.5,
     eligibility_criteria: {
       min_income: 100000,
       min_credit_score: 750
@@ -261,7 +261,7 @@ export const creditCardsData = [
     joining_fee: 5000,
     annual_fee: 5000,
     reward_type: "points",
-    reward_rate: "Milestone rewards: 15,000 points at \u20b91.9L; 25,000 + Taj voucher at \u20b94L spend",
+    reward_rate: 2.0,
     eligibility_criteria: {
       min_income: 60000,
       min_credit_score: 750
@@ -282,7 +282,7 @@ export const creditCardsData = [
     joining_fee: 999,
     annual_fee: 999,
     reward_type: "cashback",
-    reward_rate: "1.5% on online spends, 1% on other spends",
+    reward_rate: 1.5,
     eligibility_criteria: {
       min_income: 25000,
       min_credit_score: 750
@@ -302,7 +302,7 @@ export const creditCardsData = [
     joining_fee: 0,
     annual_fee: 0,
     reward_type: "points",
-    reward_rate: "2 points per \u20b9150 spent",
+    reward_rate: 2.0,
     eligibility_criteria: {
       min_income: 30000,
       min_credit_score: 750
@@ -322,7 +322,7 @@ export const creditCardsData = [
     joining_fee: 0,
     annual_fee: 0,
     reward_type: "points",
-    reward_rate: "Up to 3X reward points on overseas & dining spends",
+    reward_rate: 3.0,
     eligibility_criteria: {
       min_income: 1,
       min_credit_score: 750
@@ -342,7 +342,7 @@ export const creditCardsData = [
     joining_fee: 499,
     annual_fee: 499,
     reward_type: "points",
-    reward_rate: "3X rewards on dining, telecom, and utility bill spends",
+    reward_rate: 3.0,
     eligibility_criteria: {
       min_income: 20000,
       min_credit_score: 750
@@ -362,7 +362,7 @@ export const creditCardsData = [
     joining_fee: 1499,
     annual_fee: 1499,
     reward_type: "fuel points",
-    reward_rate: "25X reward points on BPCL fuel spends, 10X on groceries & dining",
+    reward_rate: 6.0,
     eligibility_criteria: {
       min_income: 30000,
       min_credit_score: 750
@@ -382,7 +382,7 @@ export const creditCardsData = [
     joining_fee: 500,
     annual_fee: 500,
     reward_type: "fuel points",
-    reward_rate: "20 EDGE Reward Points per \u20b9100 fuel spend at IOCL",
+    reward_rate: 1.6,
     eligibility_criteria: {
       min_income: 20000,
       min_credit_score: 750
@@ -402,7 +402,7 @@ export const creditCardsData = [
     joining_fee: 749,
     annual_fee: 749,
     reward_type: "points",
-    reward_rate: "10 Saving Points per \u20b9100 spent on groceries & department stores",
+    reward_rate: 1.2,
     eligibility_criteria: {
       min_income: 25000,
       min_credit_score: 750

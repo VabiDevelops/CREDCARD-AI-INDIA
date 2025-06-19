@@ -29,7 +29,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="p-2 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl">
+              <div className="p-2 bg-gradient-to-r from-blue-500 to-indigo-800 rounded-xl">
                 <CreditCard className="h-6 w-6 text-white" />
               </div>
               <div>
@@ -67,26 +67,19 @@ const Index = () => {
               </p>
               
               {/* Feature Highlights */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-8">
                 <div className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
-                  <Database className="h-8 w-8 text-blue-500" />
+                  <Database className="h-10 w-10 text-red-500" />
                   <div className="text-left">
                     <h3 className="font-semibold text-gray-900">20+ Credit Cards</h3>
                     <p className="text-sm text-gray-600">Comprehensive Indian card database</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
-                  <Zap className="h-8 w-8 text-green-500" />
+                  <Zap className="h-10 w-10 text-yellow-500" />
                   <div className="text-left">
                     <h3 className="font-semibold text-gray-900">AI-Powered</h3>
                     <p className="text-sm text-gray-600">OpenAI GPT-4 recommendations</p>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
-                  <MessageSquare className="h-8 w-8 text-purple-500" />
-                  <div className="text-left">
-                    <h3 className="font-semibold text-gray-900">WhatsApp Ready</h3>
-                    <p className="text-sm text-gray-600">Chat via WhatsApp or web</p>
                   </div>
                 </div>
               </div>
@@ -107,12 +100,12 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t mt-20">
+      <footer className="bg-gray-100 border-t mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600">
-            <p>© 2024 SmartCard AI. Powered by Python FastAPI + OpenAI + React.</p>
+            <p>© 2025 CredCard AI</p>
             <p className="text-sm mt-2">
-              Backend: FastAPI + PostgreSQL + Twilio WhatsApp | Frontend: React + TypeScript + Tailwind CSS
+              Assignment for Times Internet Ltd. Recruitment
             </p>
             <p className="text-xs mt-2 text-gray-500">
               Disclaimer: Recommendations are AI-generated based on general criteria. Please verify details with card issuers.

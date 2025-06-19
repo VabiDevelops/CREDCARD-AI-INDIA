@@ -183,8 +183,10 @@ const CreditCardComponent: React.FC<{
       </div>
 
       {/* Card Visual */}
-      <div className="overflow-hidden h-40 bg-white rounded-xl mb-4 flex items-center justify-center">
-        <img src = {card.image_url} className = "object-cover h-full w-full"/>
+      <div className="overflow-hidden h-40 w-full bg-gradient-to-r from-gray-100 to-white rounded-xl mb-4 flex items-center justify-center">
+        <img src = {card.image_url} 
+        alt={card.name}
+        className = "object-contain h-full w-full"/>
       </div>
     </div>
 

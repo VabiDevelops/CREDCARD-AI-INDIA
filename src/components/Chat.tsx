@@ -35,12 +35,19 @@ useEffect(() => {
 
     const userMessage = input.trim();
     setInput('');
+
+    // Scroll immediately after sending
+    scrollToBottom();
+
     await sendMessage(userMessage);
   };
 
+
   const handleQuickResponse = async (response: string) => {
-    await sendMessage(response);
+  scrollToBottom();
+  await sendMessage(response);
   };
+
 
   return (
     <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
@@ -94,7 +101,7 @@ useEffect(() => {
         
         {error && <ErrorMessage error={error} />}
 
-        <div ref={messagesEndRef} />
+        <div id="chat-end-anchor" />
       </div>
 
       {/* Input Area */}
@@ -134,19 +141,27 @@ const MessageBubble: React.FC<{
   const [displayedText, setDisplayedText] = useState('');
   const isUser = message.role === 'user';
 
-  useEffect(() => {
-    if (!isUser) {
-      let i = 0;
-      const interval = setInterval(() => {
-        setDisplayedText(message.content.slice(0, i + 1));
+useEffect(() => {
+  if (!isUser) {
+    let i = 0;
+    const interval = setInterval(() => {
+      setDisplayedText((prev) => {
+        const next = message.content.slice(0, i + 1);
         i++;
+
+        // Scroll every time text updates
+        const el = document.getElementById('chat-end-anchor')?.scrollIntoView({ behavior: 'smooth' });
+
         if (i >= message.content.length) clearInterval(interval);
-      }, 15); // typing speed
-      return () => clearInterval(interval);
-    } else {
-      setDisplayedText(message.content); // instant for user
-    }
-  }, [message.content, isUser]);
+        return next;
+      });
+    }, 15);
+    return () => clearInterval(interval);
+  } else {
+    setDisplayedText(message.content);
+  }
+}, [message.content, isUser]);
+
 
   return (
     <div className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}>

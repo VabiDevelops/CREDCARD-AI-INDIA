@@ -38,7 +38,7 @@ A minimal AI-powered frontend application that helps users get **personalized cr
 4. Agent returns a recommended credit card and rationale.
 5. UI displays result in a styled card format.
 
-**Prompt Template:**
+**Prompt Used:**
 
 ```text
 You are a credit card advisor. Based on the following details:
@@ -48,3 +48,27 @@ You are a credit card advisor. Based on the following details:
 
 Recommend one card from the following: [Card A, Card B, Card C].
 Provide a short explanation for your recommendation.
+```
+
+## ⚙️ Local Setup Instructions
+
+Clone the repository and run it locally:
+```
+git clone https://github.com/VabiDevelops/CREDCARD-AI-INDIA.git
+cd CREDCARD-AI-INDIA
+npm install
+```
+
+Set your OpenAI API key:
+```
+echo "VITE_OPENAI_API_KEY=your-api-key-here" > .env
+```
+Run the development server:
+```
+npm run dev
+```
+
+Build for production:
+```
+npm run build
+```

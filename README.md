@@ -6,7 +6,7 @@ A minimal AI-powered frontend application that helps users get **personalized cr
 
 ## 🔗 Live Demo
 
-👉 [https://credcard-ai.onrender.com](https://credcard-ai.onrender.com)
+👉 [https://credcard-ai-india.onrender.com/](https://credcard-ai-india.onrender.com/)
 
 ---
 

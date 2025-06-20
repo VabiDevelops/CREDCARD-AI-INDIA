@@ -12,7 +12,7 @@ A minimal AI-powered frontend application that helps users get **personalized cr
 
 ## 📽 Demo Video
 
-▶️ [Watch Demo](https://link-to-your-video.com)  
+▶️ [Watch Demo](https://drive.google.com/file/d/1FDp5dduQVC59EXLZePHS-ojQt8Um7io0/view?usp=drive_link)  
 
 ---
 
